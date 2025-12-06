@@ -10,15 +10,6 @@
     overflow-y: hidden;
 }
 
-/* Make swiper wrapper stretch to the tallest slide */
-.swiper-wrapper {
-    height: auto !important;
-}
-
-/* Make every slide auto-size to its content */
-.swiper-slide {
-    height: auto !important;
-}
 
 .hero .hero-card {
     position: relative;
@@ -286,9 +277,6 @@
 }
 
 .features-box {
-    display: flex;
-    gap: 20px;
-    overflow-y: scroll;
     box-sizing: border-box;
     padding: 150px 0 50px 0;
     position: relative;
@@ -296,17 +284,18 @@
         display: none;
     }
 }
-
+    
 .features-box .feat-card {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
     justify-content: space-between;
     position: relative;
     transition: all .3s ease-in-out;
     top: 0;
     &:hover {
-        position: relative;
-        top: -70px;
+        transform: translateY(-70px);
     }
 }
 .features-box .debate {
@@ -360,7 +349,8 @@
     text-align: left;
 }
 .feat-fixture img {
-    width: 500px;
+    width: 100%;
+    overflow: hidden;
     display: block;
     object-fit: cover;
     object-position: center;
@@ -402,6 +392,7 @@
         color: var(--green-color);
     }
 }
+
 
 @media screen and (max-width: 750px) {
     .hero .hero-card {

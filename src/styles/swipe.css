@@ -1,0 +1,44 @@
+.swiper-wrapper {
+    height: auto !important;
+}
+
+/* Make every slide auto-size to its content */
+.swiper-slide {
+    height: auto !important;
+}
+
+/* Allow slides and wrapper to show overflow so cards can move out of their slide box */
+.features-box .swiper,
+.features-box .swiper-wrapper,
+.features-box .swiper-slide {
+  overflow: visible !important;   /* allow hover lift to be visible */
+}
+
+/* Make sure slide height won't clip; keep slides auto height if needed */
+.features-box .swiper-slide {
+  height: auto;
+}
+
+/* Smooth GPU animation and hint to browser */
+.features-box .feat-card {
+  transition: transform .28s cubic-bezier(.2,.9,.25,1), box-shadow .28s;
+  will-change: transform;
+  position: relative;             /* required for z-index to work reliably */
+  z-index: 1;                     /* baseline */
+}
+
+/* Hover lift + bring above neighbors */
+.features-box .feat-card:hover {
+  transform: translateY(-70px);   /* your desired lift */
+  z-index: 999;                   /* ensure it stacks above other slides */
+  box-shadow: 0 24px 40px rgba(0,0,0,.18);
+}
+
+/* If your Swiper container or any ancestor has `transform`, that creates a stacking context.
+   If you still see clipping, try this (use sparingly): */
+.features-box {
+  /* transform: none; */ /* try removing any transform on this element if present */
+}
+
+/* If you're using pointer events / interactive content on lifted element, increase pointer area */
+.features-box .feat-card:hover { pointer-events: auto; }

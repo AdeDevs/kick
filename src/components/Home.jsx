@@ -13,7 +13,7 @@ export default function HomePage() {
         <div className="home">
             <header className="hero">
                 <Swiper
-                    spaceBetween={20}
+                    spaceBetween={0}
                     modules={[Autoplay]}
                     slidesPerView={1}
                     loop={true}
@@ -103,87 +103,29 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section className="features-box">
-                    <div className="feat-card debate">
-                        <div className='feat-img'>
-                            <div className='feat-fixture'>
-                                <ul>
-                                    <article>
-                                        <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
-                                         <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
-                                    </article>
-                                    <li className='dbt'>fan debate <br /> room</li>
-                                </ul>
-                                <img src={debate} alt="debate image" />
-                            </div>
-                        </div>
-                        <div className='feat-foot'>
-                            <div className="feat-info">
-                                <ul>
-                                    <li>community-led voice + video chat</li>
-                                    <li>heated takes, polls, and prediction <br /> battles</li>
-                                    <li>3.9 million followers</li>
-                                </ul>
-                                {/* <h2>Logo</h2> */}
-                            </div>
-                            <button>join discussion</button>
-                        </div>
-                    </div>
-                    <div className="feat-card reactions">
-                        <div className='feat-img'>
-                            <div className='feat-fixture'>
-                                <ul>
-                                    <article>
-                                        <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
-                                         <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
-                                    </article>
-                                    <li className='dbt'>fan debate <br /> room</li>
-                                </ul>
-                                <img src={reactions} alt="debate image" />
-                            </div>
-                        </div>
-                        <div className='feat-foot'>
-                            <div className="feat-info">
-                                <ul>
-                                    <li>community-led voice + video chat</li>
-                                    <li>heated takes, polls, and prediction <br /> battles</li>
-                                    <li>3.9 million followers</li>
-                                </ul>
-                                {/* <h2>Logo</h2> */}
-                            </div>
-                            <button>join discussion</button>
-                        </div>
-                    </div>
-                    <div className="feat-card rally">
-                        <div className='feat-img'>
-                            <div className='feat-fixture'>
-                                <ul>
-                                    <article>
-                                        <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
-                                         <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
-                                    </article>
-                                    <li className='dbt'>fan debate <br /> room</li>
-                                </ul>
-                                <img src={rally} alt="rally image" />
-                            </div>
-                        </div>
-                        <div className='feat-foot'>
-                            <div className="feat-info">
-                                <ul>
-                                    <li>community-led voice + video chat</li>
-                                    <li>heated takes, polls, and prediction <br /> battles</li>
-                                    <li>3.9 million followers</li>
-                                </ul>
-                                {/* <h2>Logo</h2> */}
-                            </div>
-                            <button>join discussion</button>
-                        </div>
-                    </div>
+                    <Swiper
+                        spaceBetween={20}
+                        modules={[Autoplay]}
+                        slidesPerView={3}
+                        loop={true}
+                        speed={300}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                    >
+                        <SwiperSlide><Debate /></SwiperSlide>
+                        <SwiperSlide><Reactions /></SwiperSlide>
+                        <SwiperSlide><Rally /></SwiperSlide>
+                        <SwiperSlide><Debate /></SwiperSlide>
+                        <SwiperSlide><Reactions /></SwiperSlide>
+                        <SwiperSlide><Rally /></SwiperSlide>
+                    </Swiper>
                 </section>
             </div>
         </div>
     )
 }
-
 
 
 function Stream() {
@@ -201,7 +143,6 @@ function Stream() {
         </div>
     )
 }
-
 function Live() {
     return (
         <div className='hero-card live'>
@@ -211,6 +152,93 @@ function Live() {
             <div className="hero-fixture">
                 <h1>kick stream brings football closer - wherever you are</h1>
                 <a href="#">see live now</a>
+            </div>
+        </div>
+    )
+}
+function Debate() {
+    return (
+        <div className="feat-card debate">
+            <div className='feat-img'>
+                <div className='feat-fixture'>
+                    <ul>
+                        <article>
+                            <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
+                            <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                        </article>
+                        <li className='dbt'>fan debate <br /> room</li>
+                    </ul>
+                    <img src={debate} alt="debate image" />
+                </div>
+            </div>
+            <div className='feat-foot'>
+                <div className="feat-info">
+                    <ul>
+                        <li>community-led voice + video chat</li>
+                        <li>heated takes, polls, and prediction <br /> battles</li>
+                        <li>3.9 million followers</li>
+                    </ul>
+                    {/* <h2>Logo</h2> */}
+                </div>
+                <button>join discussion</button>
+            </div>
+        </div>
+    )
+}
+function Reactions() {
+    return (
+        <div className="feat-card reactions">
+            <div className='feat-img'>
+                <div className='feat-fixture'>
+                    <ul>
+                        <article>
+                            <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
+                            <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                        </article>
+                        <li className='dbt'>fan debate <br /> room</li>
+                    </ul>
+                    <img src={reactions} alt="debate image" />
+                </div>
+            </div>
+            <div className='feat-foot'>
+                <div className="feat-info">
+                    <ul>
+                        <li>community-led voice + video chat</li>
+                        <li>heated takes, polls, and prediction <br /> battles</li>
+                        <li>3.9 million followers</li>
+                    </ul>
+                    {/* <h2>Logo</h2> */}
+                </div>
+                <button>join discussion</button>
+            </div>
+        </div>
+    )
+}
+function Rally() {
+    return (
+        <div className="feat-card rally">
+            <div className='feat-img'>
+                <div className='feat-fixture'>
+                    <ul>
+                        <article>
+                            <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
+                            <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                        </article>
+                        <li className='dbt'>fan debate <br /> room</li>
+                    </ul>
+                    <img src={rally} alt="rally image" />
+                </div>
+            </div>
+            <div className='feat-foot'>
+                <div className="feat-info">
+                    <ul>
+                        <li>community-led voice + video chat</li>
+                        <li>heated takes, polls, and prediction <br /> battles</li>
+                        <li>3.9 million followers</li>
+                    </ul>
+                    {/* <h2>Logo</h2> */}
+                </div>
+                <button>join discussion</button>
             </div>
         </div>
     )
