@@ -106,12 +106,17 @@ export default function HomePage() {
                     <Swiper
                         spaceBetween={20}
                         modules={[Autoplay]}
-                        slidesPerView={3}
                         loop={true}
                         speed={300}
                         autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
+                        }}
+                        breakpoints={{
+                            0: { slidesPerView: "auto" },
+                            640: { slidesPerView: 1.3 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
                         }}
                     >
                         <SwiperSlide><Debate /></SwiperSlide>

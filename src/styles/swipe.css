@@ -5,7 +5,9 @@
 /* Make every slide auto-size to its content */
 .swiper-slide {
     height: auto !important;
+    display: flex;
 }
+
 
 /* Allow slides and wrapper to show overflow so cards can move out of their slide box */
 .features-box .swiper,
