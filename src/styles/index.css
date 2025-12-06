@@ -6,6 +6,7 @@
     --blue-color: #00418a;
     --green-color: #e4f52c;
     --red-color: #e33932;
+    --purple-color: #a045ed;
 }
 body {
     background-color: var(--dark-color);
@@ -42,7 +43,7 @@ button {
 
 .nav-bar .navigation {
     display: flex;
-    padding: 20px 10px;
+    padding: 30px 10px;
     align-items: center;
     justify-content: space-between;
 }
