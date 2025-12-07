@@ -185,12 +185,12 @@ export default function HomePage() {
                             <div className="match-top">
                                 <ul>
                                     <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
-                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                    <li>live channels <br /> <span className='dte'>12 dec 2025</span></li>
                                 </ul>
                             </div>
                             <div className="match-info">
-                                <h2 className="mch-date">26 aug</h2>
-                                <p>man united <span>vs</span> man city</p>
+                                <h2 className="mch-date">12 dec</h2>
+                                <p>chelsea <span>vs</span> everton</p>
                                 <button className='live-btn'>see live now</button>
                             </div>
                         </div>
@@ -198,12 +198,12 @@ export default function HomePage() {
                             <div className="match-top">
                                 <ul>
                                     <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
-                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                    <li>live channels <br /> <span className='dte'>13 dec 2025</span></li>
                                 </ul>
                             </div>
                             <div className="match-info">
-                                <h2 className="mch-date">26 aug</h2>
-                                <p>man united <span>vs</span> man city</p>
+                                <h2 className="mch-date">13 dec</h2>
+                                <p>liverpool <span>vs</span> brighton</p>
                                 <button className='live-btn'>see live now</button>
                             </div>
                         </div>
@@ -211,12 +211,12 @@ export default function HomePage() {
                             <div className="match-top">
                                 <ul>
                                     <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
-                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                    <li>live channels <br /> <span className='dte'>14 dec 2025</span></li>
                                 </ul>
                             </div>
                             <div className="match-info">
-                                <h2 className="mch-date">26 aug</h2>
-                                <p>man united <span>vs</span> man city</p>
+                                <h2 className="mch-date">14 dec</h2>
+                                <p>crystal palace <span>vs</span> man city</p>
                                 <button className='live-btn'>see live now</button>
                             </div>
                         </div>
@@ -224,12 +224,12 @@ export default function HomePage() {
                             <div className="match-top">
                                 <ul>
                                     <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
-                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                    <li>live channels <br /> <span className='dte'>14 dec 2025</span></li>
                                 </ul>
                             </div>
                             <div className="match-info">
-                                <h2 className="mch-date">26 aug</h2>
-                                <p>man united <span>vs</span> man city</p>
+                                <h2 className="mch-date">14 dec</h2>
+                                <p>strasbourg <span>vs</span> lorient</p>
                                 <button className='live-btn'>see live now</button>
                             </div>
                         </div>
@@ -237,12 +237,12 @@ export default function HomePage() {
                             <div className="match-top">
                                 <ul>
                                     <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
-                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                    <li>live channels <br /> <span className='dte'>15 dec 2025</span></li>
                                 </ul>
                             </div>
                             <div className="match-info">
-                                <h2 className="mch-date">26 aug</h2>
-                                <p>man united <span>vs</span> man city</p>
+                                <h2 className="mch-date">15 dec</h2>
+                                <p>man united <span>vs</span> bournemouth</p>
                                 <button className='live-btn'>see live now</button>
                             </div>
                         </div>
