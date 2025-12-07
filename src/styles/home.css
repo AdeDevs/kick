@@ -152,8 +152,8 @@
 
 .events {
     color: #fff;
-    padding: 0 20px;
     box-sizing: border-box;
+    padding: 0 20px;
     align-items: center;
     display: flex;
     border: 1px solid grey;
@@ -165,6 +165,7 @@
 
 .events h1 {
     font-size: 18px;
+    width: fit-content;
     font-weight: 700;
     line-height: 100%;
     text-transform: uppercase;
@@ -320,9 +321,8 @@
     text-transform: uppercase;
     justify-content: space-between;
 }
-.feat-fixture .channel-color {
+.feat-fixture .channel-color, .match-top .channel-color {
     border: 1px solid red;
-    line-height: 100%;
     background-color: var(--red-color);
     padding: 8px;
     font-size: 10px;
@@ -394,6 +394,150 @@
         background-color: var(--dark-color);
         border-color: var(--green-color);
         color: var(--green-color);
+    }
+}
+
+/* styling for leagues start here*/
+
+.leagues {
+    box-sizing: border-box;
+    padding: 20px;
+}
+.lgs {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: normal;
+}
+.leagues .league-top {
+    border: 1px solid firebrick;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.league-top ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+.league-top .league-logo {
+    background-position: center;
+    background-size: cover;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.league-matches {
+}
+.match-nav {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.match-nav a {
+    font-size: 13px;
+    text-decoration: 2px underline;
+    text-underline-offset: 1px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        color: gray;
+        text-decoration-color: gray;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 3px;
+    }
+}
+.matches {
+    display: flex;
+    overflow-y: scroll;
+    gap: 25px;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.matches .match-card {
+    min-width: 350px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: var(--green-color);
+        color: var(--dark-color);
+    }
+}
+.match-top ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
+.match-top .channel-color {
+    padding: 5px;
+}
+.match-top li {
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.match-top .dte {
+    font-size: 10px;
+    font-weight: 500;
+}
+.match-info {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 20px;
+}
+.match-info .mch-date {
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 800;
+}
+.match-info p {
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.match-info span {
+    color: var(--green-color);
+    transition: all .3s ease-in-out;
+}
+.matches .match-card:hover .match-info span {
+    color: var(--red-color);
+}
+.match-info .live-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: inherit;
+    transition: all .3s ease-in-out;
+}
+.matches .match-card:hover .live-btn {
+    background-color: var(--dark-color);
+    color: var(--green-color);
+    &:hover {
+        background-color: transparent;
+        color: var(--dark-color);
+        border-color: var(--dark-color);
     }
 }
 
@@ -469,10 +613,21 @@
     .events {
         padding: 0 15px 0 15px;
         margin-top: 20px;
+        gap: 0;
+        align-items: stretch;
     }
-    .event-results .result-box {
+    .event-results .result-box, .leagues {
         padding: 15px;
     }
+    .events h1 {
+        display: flex;
+        border-right: 1px solid grey;
+        display: flex;
+        align-items: center;
+    }
+    /* .num {
+        margin-left: 50px;
+    } */
     .features {
         margin-top: 30px;
         padding: 20px 15px;
@@ -507,5 +662,16 @@
     .feat-foot button {
         padding: 10px 15px;
         font-size: 13px;
+    }
+    .matches {
+        gap: 15px;
+    }
+    .matches .match-card {
+        min-width: 300px;
+        width: 100%;
+        padding: 20px;
+    }
+    .match-info .mch-date {
+        font-size: 30px;
     }
 }

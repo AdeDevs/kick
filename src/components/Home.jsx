@@ -3,6 +3,7 @@ import { Autoplay } from 'swiper/modules';
 import debate from "../assets/debate.png"
 import reactions from "../assets/reactions.png"
 import rally from "../assets/rally.png"
+import laliga from "../assets/laliga.png"
 
 import 'swiper/css';
 // import { motion } from 'framer-motion';
@@ -126,6 +127,126 @@ export default function HomePage() {
                         <SwiperSlide><Reactions /></SwiperSlide>
                         <SwiperSlide><Rally /></SwiperSlide>
                     </Swiper>
+                </section>
+            </div>
+            <div className="leagues">
+                <h1 className='lgs'>LEAGUES</h1>
+                {/* <section className="league-top">
+                    <ul>
+                        <li className='league-logo prem'></li>
+                        <li>Premier League</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo serie'></li>
+                        <li>serie a</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo ligue'></li>
+                        <li>ligue 1</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo fifa'></li>
+                        <li>fifa world cup</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo brasil'></li>
+                        <li>brasileirao</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo mls'></li>
+                        <li>mls</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo japan'></li>
+                        <li>j-league</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo laliga'>
+                            <img src={laliga} alt="laliga" />
+                        </li>
+                        <li>laliga</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo bundesliga'></li>
+                        <li>bundesliga</li>
+                    </ul>
+                    <ul>
+                        <li className='league-logo korea'></li>
+                        <li>k-league</li>
+                    </ul>
+                </section> */}
+                <section className="league-matches">
+                    <div className="match-nav">
+                        <h1>upcoming matches</h1>
+                        <a href="#">view all</a>
+                    </div>
+                    <div className="matches">
+                        <div className="match-card">
+                            <div className="match-top">
+                                <ul>
+                                    <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
+                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                </ul>
+                            </div>
+                            <div className="match-info">
+                                <h2 className="mch-date">26 aug</h2>
+                                <p>man united <span>vs</span> man city</p>
+                                <button className='live-btn'>see live now</button>
+                            </div>
+                        </div>
+                        <div className="match-card">
+                            <div className="match-top">
+                                <ul>
+                                    <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
+                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                </ul>
+                            </div>
+                            <div className="match-info">
+                                <h2 className="mch-date">26 aug</h2>
+                                <p>man united <span>vs</span> man city</p>
+                                <button className='live-btn'>see live now</button>
+                            </div>
+                        </div>
+                        <div className="match-card">
+                            <div className="match-top">
+                                <ul>
+                                    <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
+                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                </ul>
+                            </div>
+                            <div className="match-info">
+                                <h2 className="mch-date">26 aug</h2>
+                                <p>man united <span>vs</span> man city</p>
+                                <button className='live-btn'>see live now</button>
+                            </div>
+                        </div>
+                        <div className="match-card">
+                            <div className="match-top">
+                                <ul>
+                                    <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
+                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                </ul>
+                            </div>
+                            <div className="match-info">
+                                <h2 className="mch-date">26 aug</h2>
+                                <p>man united <span>vs</span> man city</p>
+                                <button className='live-btn'>see live now</button>
+                            </div>
+                        </div>
+                        <div className="match-card">
+                            <div className="match-top">
+                                <ul>
+                                    <span className='channel-color'><ion-icon name="radio-button-on-outline"></ion-icon></span>
+                                    <li>live channels <br /> <span className='dte'>09 june 2025</span></li>
+                                </ul>
+                            </div>
+                            <div className="match-info">
+                                <h2 className="mch-date">26 aug</h2>
+                                <p>man united <span>vs</span> man city</p>
+                                <button className='live-btn'>see live now</button>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
