@@ -15,9 +15,9 @@
     position: relative;
     width: 100%;
     height: auto;
-    background-image: url(../assets/haaland.jpeg);
+    background-image: url(../assets/psg.webp);
     background-position: right center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--blue-color);
     overflow: hidden;
@@ -39,8 +39,8 @@
     inset: 0;
     background: linear-gradient(90deg,
             var(--blue-color) 0%,
-            var(--blue-color) 52%,
-            rgba(0, 0, 0, 0.49) 80%);
+            #00224875 52%,
+            rgba(0, 0, 0, 0.248) 80%);
     z-index: 800;
 }
 
@@ -733,11 +733,282 @@
 }
 
 .news-update {
-    
+    margin-top: 50px;
+}
+.news-update .news-card {
+    background-image: url(../assets/pep.jpg);
+    padding: 25px;
+    height: 100%;
+    padding-top: 350px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+}
+.news-update .carlo {
+    background-image: url(../assets/carlo.jpg);
+    background-position: top center;
+}
+.news-update .klopp {
+    background-image: url(../assets/klopp.jpg);
+    background-position: top center;
+}
+.news-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000001a;
+    z-index: 800;
+}
+.news-card h2, .news-card p {
+    z-index: 801;
+    position: relative;
+}
+.news-card .quote {
+    background-image: url(../assets/quotation.png);
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -12px;
+    transform: rotate(180deg);
+}
+.news-card h2 {
+    font-size: 17px;
+    background-color: var(--purple-color);
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: normal;
+}
+.klopp h2 {
+    background-color: var(--red-color);
+}
+.carlo h2 {
+    background-color: var(--blue-color);
+}
+.news-card p {
+    background-color: #fff;
+    color: var(--purple-color);
+    width: fit-content;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.news-card p span {
+    background-color: var(--green-color);
+    padding: 3px 10px;
+}
+.klopp p {
+    color: var(--red-color);
+}
+.carlo p {
+color: var(--blue-color);
 }
 
+/* subscription styling starts here*/
+.subscription {
+    padding: 40px 20px;
+    box-sizing: border-box;
+    background-color: var(--red-color);
+    overflow: hidden;
+}
+.subscription h1 {
+    font-size: 8.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+}
+.subscription h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+}
+.subscription h1 span {
+    font-size: 5.5rem;
+}
+.sub-images {
+    /* border: 4px solid var(--green-color); */
+    margin: 0 auto;
+    margin-top: -170px;
+    width: fit-content;
+    position: relative;
+    transform: translateY(100px);
+}
+.sub-images img {
+    object-fit: cover;
+    object-position: center;
+}
+.sub-images .ucl {
+    width: 400px;
+    z-index: 2;
+    position: relative;
+}
+.sub-images .uel {
+    transform: rotate(320deg);
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    left: -70px;
+    z-index: 1;
+}
+.sub-images .uecl {
+    transform: rotate(40deg);
+    width: 210px;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    z-index: 1;
+}
+.subscription button {
+    background-color: var(--green-color);
+    color: var(--dark-color);
+    padding: 10px 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 2px solid transparent;
+    display: block;
+    margin: 0 auto;
+    transition: all .3s ease-in-out;
+    position: relative;
+    z-index: 3;
+    &:hover {
+        background-color: var(--dark-color);
+        color: var(--green-color);
+        border-color: var(--green-color);
+    }
+}
+
+footer {
+    padding: 50px 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*newsletter styling starts here */
+.newsletter {
+    padding: 20px 0 50px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.newsletter h1 {
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 700;
+}
+.newsletter .news-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.news-form form {
+    display: flex;
+}
+.news-form input {
+    padding: 10px 15px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-right: none;
+    font-family: inherit;
+    text-transform: inherit;
+    font-weight: 800;
+    font-size: 15px;
+    transition: all .3s ease-in-out;
+    &:hover, &:focus {
+        border-color: var(--green-color);
+        background-color: transparent;
+        color: #fff;
+    }
+}
+.news-form button {
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--red-color);
+    background-color: var(--green-color);
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    &:hover {
+        background-color: transparent;
+        border-color: var(--green-color);
+        color: var(--green-color);
+    }
+}
+
+.footers {
+    border-top: 1px solid grey;
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footers ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footers ul li {
+    z-index: 2;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    list-style-position: inside;
+    text-decoration: 2px underline transparent;
+    text-underline-offset: 1px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        color: var(--green-color);
+        text-decoration-color: var(--green-color);
+        text-underline-offset: 4px;
+        text-decoration-thickness: 3px;
+    }
+}
+.footers ul:nth-child(2) li {
+    list-style-type: none;
+}
+.footers ul:nth-child(1) li:nth-child(1) {
+    list-style-type: none;
+}
+.biggest {
+    font-size: clamp(80px, 38vw, 550px);
+    position: relative;
+    z-index: 1;
+    transform: translateX(clamp(-110px, -10vw, -120px));
+    margin-bottom: clamp(-350px, -20vw, -200px);
+    /* transform: translateY(100px); */
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 100%;
+}
+.biggest span {
+    color: var(--green-color);
+}
+
+
 @media screen and (max-width: 750px) {
-    .hero .hero-card {
+    .hero .stream {
         background-size: cover;
     }
 
@@ -778,13 +1049,60 @@
     .feat-head .big-text {
         font-size: clamp(2rem, 1.2rem + 5vw, 3rem);
     }
+    .subscription h2 {
+        font-size: clamp(2rem, 1.2rem + 5vw, 3rem);
+    }
+    .subscription h1 {
+        font-size: clamp(5rem, 3rem + 6vw, 8rem);
+    }
+    .sub-images {
+        margin-top: -150px;
+    }
+    .sub-images .ucl {
+        width: 300px;
+    }
+    .sub-images .uel {
+        width: 180px;
+        left: -60px;
+    }
+    .sub-images .uecl {
+        width: 160px;
+        right: -40px;
+    }
+    .newsletter, .footers {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .newsletter br {
+        display: none;
+    }
+    .newsletter  .news-form {
+        width: 100%;
+    }
+    .news-form input {
+        width: 100%;
+        padding: 17px 15px;
+    }
+    .news-form button {
+        padding: 10px 20px;
+    }
+    .footers {
+        gap: 20px;
+    }
+    .footers ul:nth-last-child(1) {
+        align-self: flex-end;
+    }
+    .biggest {
+        font-size: clamp(70px, 38vw, 400px);
+        transform: translateX(clamp(-70px, -10vw, -120px));
+        margin-bottom: clamp(-150px, -20vw, -200px);
+    }
 }
 
 @media screen and (max-width: 550px) {
     .hero {
         padding: 10px;
     }
-
     .hero-content {
         gap: 60px;
     }
@@ -804,9 +1122,9 @@
     .hero-card::before {
         inset: 0;
         background: linear-gradient(90deg,
-                var(--blue-color) 0%,
-                #00408a3e 50%,
-                rgba(0, 0, 0, 0.248) 80%);
+        #00224894 50%,
+                #00224894 50%,
+                #00224894 50%);
         z-index: 800;
     }
 
@@ -906,4 +1224,56 @@
     .scoreline .goals {
         font-size: clamp(17px, 2.6vw, 25px);
     }
+    .news {
+        padding: 50px 15px;
+    }
+    .news-update .news-card {
+        padding-top: 300px;
+    }
+    .subscription {
+        padding: 30px 15px;
+    }
+    .subscription h2 {
+        font-size: clamp(1.5rem, 1.2rem + 5vw, 2rem);
+    }
+    .subscription h1 {
+        font-size: clamp(4rem, 3rem + 5vw, 6rem);
+    }
+    .sub-images .ucl {
+        width: 55vw;
+    }
+    .sub-images .uel {
+        width: 180px;
+        width: 32vw;
+        transform: rotate(330deg);
+        left: -50px;
+    }
+    .sub-images .uecl {
+        min-width: 100px;
+        width: 29vw;
+        right: -40px;
+    }
+    footer {
+        padding: 40px 15px;
+    }
+    .newsletter h1 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .footers ul li {
+        font-size: 13px;
+    }
+    .biggest {
+        font-size: clamp(70px, 38vw, 400px);
+        transform: translateX(clamp(-45px, -10vw, -120px));
+        margin-bottom: clamp(-130px, -20vw, -200px);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .biggest {
+        font-size: clamp(70px, 38vw, 400px);
+        transform: translateX(clamp(-40px, -10vw, -120px));
+        margin-bottom: clamp(-110px, -20vw, -200px);
+    }   
 }

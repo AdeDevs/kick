@@ -17,7 +17,7 @@
 }
 
 /* Make sure slide height won't clip; keep slides auto height if needed */
-.features-box .swiper-slide {
+.features-box .swiper-slide, .news-update .swiper-slide {
   height: auto;
 }
 
@@ -44,3 +44,23 @@
 
 /* If you're using pointer events / interactive content on lifted element, increase pointer area */
 .features-box .feat-card:hover { pointer-events: auto; }
+
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  opacity: 0.3;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}

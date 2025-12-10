@@ -3,7 +3,9 @@ import { Autoplay } from 'swiper/modules';
 import debate from "../assets/debate.png"
 import reactions from "../assets/reactions.png"
 import rally from "../assets/rally.png"
-import laliga from "../assets/laliga.png"
+import ucl from "../assets/ucl.png"
+import uel from "../assets/europa.png"
+import uecl from "../assets/conference.png"
 
 import 'swiper/css';
 // import { motion } from 'framer-motion';
@@ -14,7 +16,7 @@ export default function HomePage() {
         <div className="home">
             <header className="hero">
                 <Swiper
-                    spaceBetween={0}
+                    spaceBetween={20}
                     modules={[Autoplay]}
                     slidesPerView={1}
                     loop={true}
@@ -269,7 +271,7 @@ export default function HomePage() {
                     <p>kick stream brings football <br /> closer-wherever you are.</p>
                 </section>
             </div>
-            {/* <div className="news">
+            <div className="news">
                 <section className="feat-head">
                     <p>news features 2025</p>
                     <div className="feat-nav">
@@ -281,20 +283,95 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section className="news-update">
-                    <div className='news-card'>
-                            <h2>no one can compare with messi, it will not help erling, but in terms of goals and mentality, yeah"</h2>
-                            <p>pep guardiola <span>to haaland</span></p>
-                    </div>
-                    <div className='news-card'>
-                            <h2>no one can compare with messi, it will not help erling, but in terms of goals and mentality, yeah"</h2>
-                            <p>pep guardiola <span>to haaland</span></p>
-                    </div>
-                    <div className='news-card'>
-                            <h2>no one can compare with messi, it will not help erling, but in terms of goals and mentality, yeah"</h2>
-                            <p>pep guardiola <span>to haaland</span></p>
-                    </div>
+                    <Swiper
+                        spaceBetween={20}
+                        modules={[Autoplay]}
+                        loop={true}
+                        speed={300}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        breakpoints={{
+                            0: { slidesPerView: "auto" },
+                            640: { slidesPerView: 1.3 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                        }}
+                    >
+                        <SwiperSlide>
+                            <div className='news-card pep'>
+                                <h2><span className="quote"></span>no one can compare with messi, it will not help erling, but in terms of goals and mentality, yeah."</h2>
+                                <p>pep guardiola <span>to haaland</span></p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='news-card klopp'>
+                                <h2><span className="quote"></span>he's a club legend, but the future? that's always a tricky one."</h2>
+                                <p>jurgen klopp <span>to salah</span></p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='news-card carlo'>
+                                <h2><span className="quote"></span>some dreams take time, but madrid is always patient."</h2>
+                                <p>pep guardiola <span>to haaland</span></p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='news-card pep'>
+                                <h2><span className="quote"></span>no one can compare with messi, it will not help erling, but in terms of goals and mentality, yeah."</h2>
+                                <p>pep guardiola <span>to haaland</span></p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='news-card klopp'>
+                                <h2><span className="quote"></span>he's a club legend, but the future? that's always a tricky one."</h2>
+                                <p>jurgen klopp <span>to salah</span></p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className='news-card carlo'>
+                                <h2><span className="quote"></span>some dreams take time, but madrid is always patient."</h2>
+                                <p>pep guardiola <span>to haaland</span></p>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </section>
-            </div> */}
+            </div>
+            <div className="subscription">
+                <h2>kick! your <br /></h2>
+                <h1>stream</h1>
+                <section className="sub-images">
+                    <img src={uel} className='uel' alt="trophy" />
+                    <img src={ucl} className='ucl' alt="trophy" />
+                    <img src={uecl} className='uecl' alt="trophy" />
+                </section>
+                <button>subscribe</button>
+            </div>
+            <footer>
+                <div className="newsletter">
+                    <h1>KICK STREAMING IS YOUR PASSPORT <br /> TO THE GLOBAL GAME. WHEREVER <br /> YOU ARE, THE MATCH IS ALWAYS <br /> WITHIN REACH.</h1>
+                    <section className="news-form">
+                        <h1>SUBSCRIBE NOW</h1>
+                        <form>
+                            <input type="email" placeholder='your email' required />
+                            <button><ion-icon name="send"></ion-icon></button>
+                        </form>
+                    </section>
+                </div>
+                <div className="footers">
+                    <ul className="links">
+                        <li>x(twitter)</li>
+                        <li>facebook</li>
+                        <li>instagram</li>
+                    </ul>
+                    <ul className='legal'>
+                        <li>2025 copyright</li>
+                        <li>all rights reserved</li>
+                    </ul>
+                </div>
+                <h1 className='biggest'>KICK<span>!</span></h1>
+            </footer>
         </div>
     )
 }
@@ -302,7 +379,7 @@ export default function HomePage() {
 
 function Stream() {
     return (
-        <div className='hero-card'>
+        <div className='hero-card stream'>
             <div className="hero-content">
                 <h1 className='big-text'>step up your football <br /> streaming game with  <br /> <span>kick stream+</span></h1>
                 <p>stream top leagues, exclusive docs, and all-time <br /> highlights-live and on-demand.</p>

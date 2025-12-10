@@ -72,8 +72,8 @@ button {
     transition: all .3s ease-in-out;
     cursor: pointer;
     &:hover {
-        color: gray;
-        text-decoration-color: gray;
+        color: var(--green-color);
+        text-decoration-color: var(--green-color);
         text-underline-offset: 4px;
         text-decoration-thickness: 3px;
     }
