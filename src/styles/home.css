@@ -176,6 +176,7 @@
     overflow-y: scroll;
     overflow-y: hidden;
     width: 100%;
+
     &::-webkit-scrollbar {
         display: none;
     }
@@ -188,17 +189,21 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .result-box:nth-last-child(1) {
     border-right: none;
 }
+
 .result-box h2 {
     line-height: 100%;
     margin-bottom: 10px;
     font-weight: 700;
 }
+
 .result-box ul {
     list-style-type: none;
 }
+
 .result-box ul .check {
     display: flex;
     font-size: 13px;
@@ -206,11 +211,13 @@
     justify-content: space-between;
     width: 100%;
 }
+
 .check li {
     display: flex;
     align-items: center;
     width: 100%;
 }
+
 .color {
     height: 8px;
     width: 8px;
@@ -219,13 +226,16 @@
     margin-right: 10px;
     display: flex;
 }
+
 .check:nth-last-child(1) .color {
     background-color: red;
 }
+
 .num {
     margin-left: 70px;
     justify-self: flex-end;
 }
+
 .check:nth-last-child(1) {
     color: grey;
 }
@@ -237,16 +247,19 @@
     padding: 20px;
     box-sizing: border-box;
 }
-.features .feat-head {
+
+.feat-head {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+
 .feat-head p {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
 }
+
 .feat-head .feat-nav {
     display: flex;
     gap: 15px;
@@ -254,12 +267,14 @@
     justify-content: space-between;
     align-items: flex-end;
 }
+
 .feat-nav .control {
     display: flex;
     align-items: center;
     list-style-type: none;
     gap: 20px;
 }
+
 .control li {
     background-color: var(--green-color);
     display: flex;
@@ -270,6 +285,7 @@
     color: var(--dark-color);
     cursor: pointer;
     transition: all .3s ease-in-out;
+
     &:hover {
         background-color: transparent;
         border-color: var(--green-color);
@@ -282,11 +298,12 @@
     box-sizing: border-box;
     padding: 150px 0 50px 0;
     position: relative;
+
     &::-webkit-scrollbar {
         display: none;
     }
 }
-    
+
 .features-box .feat-card {
     display: flex;
     flex-direction: column;
@@ -294,11 +311,13 @@
     width: 100%;
     justify-content: space-between;
     transition: all .3s ease-in-out;
+
     &:hover {
         /* transform: translateY(-70px); */
         transform: translateY(-15px) scale(1.03);
     }
 }
+
 .features-box .feat-card {
     flex: 1;
 }
@@ -306,12 +325,15 @@
 .features-box .debate {
     background-color: var(--purple-color);
 }
+
 .features-box .reactions {
     background-color: var(--blue-color);
 }
+
 .features-box .rally {
     background-color: var(--red-color);
 }
+
 .feat-fixture ul {
     padding: 20px;
     box-sizing: border-box;
@@ -321,7 +343,9 @@
     text-transform: uppercase;
     justify-content: space-between;
 }
-.feat-fixture .channel-color, .match-top .channel-color {
+
+.feat-fixture .channel-color,
+.match-top .channel-color {
     border: 1px solid red;
     background-color: var(--red-color);
     padding: 8px;
@@ -332,26 +356,32 @@
     justify-content: center;
     box-sizing: border-box;
 }
+
 .rally .channel-color {
     background-color: var(--green-color);
     color: var(--red-color);
 }
+
 .feat-fixture ul li {
     font-size: 20px;
     line-height: normal;
 }
+
 .feat-fixture .dbt {
     text-align: right;
 }
+
 .feat-fixture ul article {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
 .feat-fixture .dte {
     font-size: 13px;
     text-align: left;
 }
+
 .feat-fixture img {
     width: 100%;
     overflow: hidden;
@@ -359,6 +389,7 @@
     object-fit: cover;
     object-position: center;
 }
+
 .feat-foot {
     display: flex;
     flex-direction: column;
@@ -366,11 +397,13 @@
     padding: 20px;
     box-sizing: border-box;
 }
+
 .feat-info {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
+
 .feat-info ul {
     list-style-type: none;
     font-weight: 700;
@@ -380,6 +413,7 @@
     gap: 10px;
     font-size: 15px;
 }
+
 .feat-foot button {
     background-color: var(--green-color);
     color: var(--dark-color);
@@ -390,6 +424,7 @@
     font-weight: 700;
     font-size: 14px;
     border: 2px solid transparent;
+
     &:hover {
         background-color: var(--dark-color);
         border-color: var(--green-color);
@@ -403,11 +438,13 @@
     box-sizing: border-box;
     padding: 20px;
 }
+
 .lgs {
     font-weight: 700;
     font-size: 20px;
     line-height: normal;
 }
+
 .leagues .league-top {
     border: 1px solid firebrick;
     display: flex;
@@ -415,6 +452,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 .league-top ul {
     list-style-type: none;
     text-transform: uppercase;
@@ -425,6 +463,7 @@
     flex-direction: column;
     /* gap: 15px; */
 }
+
 .league-top .league-logo {
     background-position: center;
     background-size: cover;
@@ -434,8 +473,9 @@
     align-items: center;
     /* border: 1px solid red; */
 }
-.league-matches {
-}
+
+.league-matches {}
+
 .match-nav {
     margin: 30px 0;
     display: flex;
@@ -446,12 +486,14 @@
     text-transform: uppercase;
     font-size: 15px;
 }
+
 .match-nav a {
     font-size: 13px;
     text-decoration: 2px underline;
     text-underline-offset: 1px;
     transition: all .3s ease-in-out;
     cursor: pointer;
+
     &:hover {
         color: gray;
         text-decoration-color: gray;
@@ -459,43 +501,52 @@
         text-decoration-thickness: 3px;
     }
 }
+
 .matches {
     display: flex;
     overflow-y: scroll;
     gap: 25px;
+
     &::-webkit-scrollbar {
         display: none;
     }
 }
+
 .matches .match-card {
     min-width: 350px;
     padding: 30px;
     box-sizing: border-box;
     transition: all .3s ease-in-out;
+
     &:hover {
         background-color: var(--green-color);
         color: var(--dark-color);
     }
 }
+
 .match-top ul {
     display: flex;
     align-items: center;
     list-style-type: none;
     gap: 10px;
 }
+
 .match-top .channel-color {
     padding: 5px;
 }
+
 .match-top li {
     font-size: 16px;
     line-height: 100%;
     text-transform: uppercase;
     font-weight: 700;
 }
+
 .match-top .dte {
     font-size: 10px;
     font-weight: 500;
 }
+
 .match-info {
     margin-top: 250px;
     display: flex;
@@ -503,11 +554,13 @@
     text-transform: uppercase;
     gap: 20px;
 }
+
 .match-info .mch-date {
     font-size: 40px;
     line-height: normal;
     font-weight: 800;
 }
+
 .match-info p {
     font-weight: 700;
     font-size: 15px;
@@ -519,9 +572,11 @@
     color: var(--green-color);
     transition: all .3s ease-in-out;
 }
+
 .matches .match-card:hover .match-info span {
     color: var(--red-color);
 }
+
 .match-info .live-btn {
     padding: 10px 20px;
     background-color: #fff;
@@ -531,9 +586,11 @@
     text-transform: inherit;
     transition: all .3s ease-in-out;
 }
+
 .matches .match-card:hover .live-btn {
     background-color: var(--dark-color);
     color: var(--green-color);
+
     &:hover {
         background-color: transparent;
         color: var(--dark-color);
@@ -541,6 +598,143 @@
     }
 }
 
+
+/* break styling starts here*/
+.break {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    background-image: url(../assets/cwc.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.break::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #001731af;
+    z-index: 800;
+}
+
+.break>* {
+    z-index: 801;
+}
+
+.break-head {
+    text-align: center;
+}
+
+.break-head .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    display: inline-flex;
+}
+
+.break-head em {
+    color: var(--green-color);
+}
+
+.break-head h2 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.break-mid .scoreline {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    color: var(--dark-color);
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+.scoreline li {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: clamp(18px, 2vw, 22px);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.scoreline .half {
+    position: absolute;
+    background-color: var(--green-color);
+    color: var(--dark-color);
+    padding: 1px 6px;
+    font-size: 12px;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.scoreline .goals {
+    background-color: var(--purple-color);
+    height: auto;
+    font-size: clamp(20px, 3vw, 30px);
+    color: #fff;
+}
+
+.scoreline .team {
+    border-bottom: 4px solid #bbbbbb;
+    background-color: #fff;
+}
+
+.scoreline .team:nth-child(2) {
+    border-bottom: none;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right,
+                var(--blue-color) 0%, var(--blue-color) 50%,
+                var(--dark-color) 50%, var(--dark-color) 100%);
+    }
+}
+
+.scoreline .time {
+    background-color: #001f4b;
+    color: #fff;
+    border-bottom: 4px solid var(--green-color);
+}
+
+.break-foot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.break-foot p {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* news styling starts here*/
+.news {
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.news-update {
+    
+}
 
 @media screen and (max-width: 750px) {
     .hero .hero-card {
@@ -561,14 +755,17 @@
         line-height: normal;
         font-size: clamp(2rem, 1.2rem + 5vw, 2rem);
     }
+
     .hero-content .access-btn {
         font-size: 15px;
         padding: 10px 20px;
     }
+
     .hero-content p {
         font-weight: 600;
         font-size: 12px;
     }
+
     .hero-fixture h1 {
         font-size: clamp(1rem, 1rem + 1vw, 1.2rem);
     }
@@ -577,6 +774,7 @@
     .hero-fixture a {
         font-size: 12px;
     }
+
     .feat-head .big-text {
         font-size: clamp(2rem, 1.2rem + 5vw, 3rem);
     }
@@ -586,6 +784,7 @@
     .hero {
         padding: 10px;
     }
+
     .hero-content {
         gap: 60px;
     }
@@ -610,21 +809,26 @@
                 rgba(0, 0, 0, 0.248) 80%);
         z-index: 800;
     }
+
     .events {
         padding: 0 15px 0 15px;
         margin-top: 20px;
         gap: 0;
         align-items: stretch;
     }
-    .event-results .result-box, .leagues {
+
+    .event-results .result-box,
+    .leagues {
         padding: 15px;
     }
+
     .events h1 {
         display: flex;
         border-right: 1px solid grey;
         display: flex;
         align-items: center;
     }
+
     /* .num {
         margin-left: 50px;
     } */
@@ -632,46 +836,74 @@
         margin-top: 30px;
         padding: 20px 15px;
     }
+
     .features-box .feat-card {
         &:hover {
             transform: none !important;
         }
     }
+
     .features-box {
         padding: 50px 0 0 0;
     }
+
     .feat-head .big-text {
         font-size: clamp(2rem, 1.2rem + 4vw, 3rem);
         align-self: flex-start;
     }
-    .feat-fixture ul, .feat-foot {
+
+    .feat-fixture ul,
+    .feat-foot {
         padding: 20px 10px;
     }
+
     .feat-fixture .channel-color {
         padding: 5px;
     }
+
     .feat-fixture ul li {
         font-size: 17px;
     }
+
     .feat-fixture .dte {
         font-size: 10px;
     }
+
     .feat-nav {
         flex-direction: column;
     }
+
     .feat-foot button {
         padding: 10px 15px;
         font-size: 13px;
     }
+
     .matches {
         gap: 15px;
     }
+
     .matches .match-card {
         min-width: 300px;
         width: 100%;
         padding: 20px;
     }
+
     .match-info .mch-date {
         font-size: 30px;
+    }
+    .break {
+        padding: 50px 15px;
+    }
+    .break-head .logo {
+        font-size: 28px;
+    }
+    .break-head h2 {
+        font-size: 15px;
+    }
+    .scoreline li {
+        font-size: clamp(16px, 1.8vw, 20px);
+    }
+    .scoreline .goals {
+        font-size: clamp(17px, 2.6vw, 25px);
     }
 }

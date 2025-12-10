@@ -249,6 +249,52 @@ export default function HomePage() {
                     </div>
                 </section>
             </div>
+            <div className="break">
+                <section className='break-head'>
+                    <h1 className='logo'>kick <em>!</em></h1>
+                    <h2>THE HOME OF FOOTBALL STREAMING</h2>
+                </section>
+                <section className='break-mid'>
+                    <ul className='scoreline'>
+                        <li className='goals'>1</li>
+                        <li className='team'>int</li>
+                        <li className='time'>30:09
+                            <li className="half">1st</li></li>
+                        <li className='team'>nap</li>
+                        <li className='goals'>0</li>
+                    </ul>
+                </section>
+                <section className='break-foot'>
+                    <p>LIVE. REPLAY. RELIVE.</p>
+                    <p>kick stream brings football <br /> closer-wherever you are.</p>
+                </section>
+            </div>
+            {/* <div className="news">
+                <section className="feat-head">
+                    <p>news features 2025</p>
+                    <div className="feat-nav">
+                        <h1 className='big-text'>TRANSFER <span>RUMOURS</span> <br /> & SUMMER <span>BUZZ</span></h1>
+                        <ul className="control">
+                            <li><ion-icon name="arrow-back-sharp"></ion-icon></li>
+                            <li><ion-icon name="arrow-forward-sharp"></ion-icon></li>
+                        </ul>
+                    </div>
+                </section>
+                <section className="news-update">
+                    <div className='news-card'>
+                            <h2>no one can compare with messi, it will not help erling, but in terms of goals and mentality, yeah"</h2>
+                            <p>pep guardiola <span>to haaland</span></p>
+                    </div>
+                    <div className='news-card'>
+                            <h2>no one can compare with messi, it will not help erling, but in terms of goals and mentality, yeah"</h2>
+                            <p>pep guardiola <span>to haaland</span></p>
+                    </div>
+                    <div className='news-card'>
+                            <h2>no one can compare with messi, it will not help erling, but in terms of goals and mentality, yeah"</h2>
+                            <p>pep guardiola <span>to haaland</span></p>
+                    </div>
+                </section>
+            </div> */}
         </div>
     )
 }
