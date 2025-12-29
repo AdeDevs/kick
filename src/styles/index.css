@@ -161,3 +161,9 @@ button {
         padding: 30px 15px;
     }
 }
+
+@media screen and (min-width: 751px) {
+    .mobile-nav {
+        display: none;
+    }
+}
